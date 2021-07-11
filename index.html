@@ -1,21 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>todo</title>
-    </head>
-    <body>
-    <h1>TODOS</h1>
-    <form action="#">
-        <img src="icons/select-all.png">
-        <input type="text" name="search" value="What needs to be done?" >
-        <p><input type="checkbox" name="HTML" value="Yes" > HTML </p>
-        <p><input type="checkbox" name="CSS" value="Yes" > CSS </p>
-        <p><input type="checkbox" name="JS" value="Yes" > JS </p>
-        <p><input type="checkbox" name="JS tools" value="Yes" > JS tools </p>
-        <p></p>
-        <p>3 items left &nbsp;&nbsp; All&nbsp;Active&nbsp;&nbsp;Completed &nbsp;&nbsp;&nbsp;&nbsp;Clear completed</p>
-
-    </form>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>todo</title>
+    <link rel="stylesheet" href="static/css/main.css">
+</head>
+<header>
+    <div class="header__title">todos</div>
+</header>
+<body>
+<div class="workspace">
+    <div class="workspace__search">
+        <span class="workspace__search icon">
+            <img src="static/icons/select-all.png", alt="I very regret">
+        </span>
+        <span class="workspace__search input">
+            <input type="text" class="workspace_text_input" placeholder="What needs to be done?" >
+        </span>
+    </div>
+    <div class="workspace__list">
+        <div class="workspace__list_item">
+            <label>
+            <input type="checkbox" name="HTML" value="Yes" >
+            <span class="checkmark"></span>
+            </label>
+            <input type="text" class="workspace_text_input" placeholder="HTML">
+        </div>
+        <div class="workspace__list_item">
+            <label>
+                <input type="checkbox" name="CSS" value="Yes" >
+                <span class="checkmark"></span>
+            </label>
+            <input type="text" class="workspace_text_input" placeholder="CSS">
+        </div>
+        <div class="workspace__list_item">
+            <label>
+                <input type="checkbox" name="JS" value="Yes" >
+                <span class="checkmark"></span>
+            </label>
+            <input type="text" class="workspace_text_input" placeholder="JS">
+        </div>
+        <div class="workspace__list_item">
+            <label>
+                <input type="checkbox" name="JS tools" value="Yes" >
+                <span class="checkmark"></span>
+            </label>
+            <input type="text" class="workspace_text_input" placeholder="JS tools">
+        </div>
+    </div>
+</div>
+</body>
+<footer>
+    <span class="footer__counter">
+        <span class="footer__counter value">3</span>
+        <span class="footer__counter text">items left</span>
+    </span>
+    <span class="footer__filters">
+        <span class="footer__filters filter">All</span>
+        <span class="footer__filters filter">Active</span>
+        <span class="footer__filters filter">Completed</span>
+    </span>
+    <span class="footer__clear">
+        <span>Clear completed</span>
+    </span>
+</footer>
 </html>
